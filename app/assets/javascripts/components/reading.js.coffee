@@ -4,5 +4,6 @@
     render: ->
       React.DOM.tr null,
         React.DOM.td null, @props.reading.title
+        React.DOM.td null, @props.authors
         React.DOM.td null, @props.reading.text
-        React.DOM.td null, dateFormat(@props.reading.startDate, @props.reading.endDate)
+        React.DOM.td null, @props.reading.startDate + ' to ' +  @props.reading.endDate

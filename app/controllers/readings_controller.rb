@@ -12,7 +12,8 @@ class ReadingsController < ApplicationController
 
   def create
     puts 'shom me'
-    puts params
+    puts reading_params
+
     @reading = Reading.new(reading_params)
 
     @reading.save
